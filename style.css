@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-color: #E6E7E5;
+    padding: 2rem 9%;
+}
+.game-section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title{
+    margin-bottom: 3rem;
+    color: #C7495C;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid #9AA8A8;
+    padding: 2rem;
+    width: fit-content;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 600;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.info{
+    display: flex;
+    width: fit-content; 
+    width: 30%;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 3rem    0 ;
+}
+.info span{
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: cursive;
+}
+.info span strong{
+    color: #C7495C;
+    margin-left: 1rem;
+}
+.time{
+    background-color: #C7495C;
+    width: fit-content;
+    text-align: center;
+    padding: 1rem 2rem;
+    color: #FFF;
+    font-size: 2rem;
+    margin: auto;
+    width: 20rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;    
+}
+
+.randomWord{
+    width: 15rem;
+    text-align: center;
+    margin: 3rem auto;
+    font-size: 2rem;
+    background-color: #222;
+    color: #c6c1bb;
+    padding: 2rem ;
+}
+.input{
+    text-align: center;
+    margin: auto;
+    width: 20rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #C7495C;
+    background-color: transparent;
+    padding-top: 3rem;
+    font-size: 1.8rem;
+}
+.words{
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 10rem;
+    border: 1px solid #222 ; 
+}
+.words span{
+    margin:1rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+.result{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: #d6dfc2;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: none;
+}
+.result p{
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 2rem;
+}
+.player-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    padding: 2rem;    
+    background-color: #c6c1bb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.player-info .title{
+    margin-bottom: 3rem;
+    color: #C7495C;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid #9AA8A8;
+    padding: 2rem;
+    width: fit-content;
+    margin:4rem  auto;
+    font-size: 1.5rem;
+    font-weight: 600;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.player-info input, select, button{
+    margin: 1rem;
+    width:250px;
+    border:none;
+    outline: none;
+    padding:1rem ;
+    font-size: 1.5rem;
+}
+select{
+color: #C7495C;
+text-transform: uppercase;
+}
+button, select{
+    cursor: pointer;
+}
+button{
+    background-color: #C7495C;
+    color: #FFF;
+}
+@media (max-width:550px) {
+    body{
+        padding: 2rem 1rem ;
+    }
+    .info{
+        flex-direction: column;
+    }
+    .info span{
+        margin-bottom: 1rem;
+    }
+    .words{
+    margin: 2rem 0;
+    padding: .5rem;
+    }
+    .words span{
+        font-size: 1.5rem;
+        margin-top: 0;
+        padding: .2rem;
+    }
+    .time{
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.randomWord{
+    width: 10rem;
+    margin: 1rem auto;
+}
+.input{
+    text-align: center;
+    margin: auto;
+    width: 20rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #C7495C;
+    background-color: transparent;
+    padding-top: 3rem;
+    font-size: 1.8rem;
+}
+}
