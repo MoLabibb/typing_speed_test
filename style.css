@@ -116,9 +116,9 @@ body{
     display: none;
 }
 .result p{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #222;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 .player-info{
     position: absolute;
@@ -204,5 +204,8 @@ button{
     background-color: transparent;
     padding-top: 3rem;
     font-size: 1.8rem;
+}
+.result p {
+    font-size: 1rem;
 }
 }
