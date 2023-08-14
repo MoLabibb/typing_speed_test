@@ -70,9 +70,9 @@ function play(){
             if(wordsList.length > 0 ){
                 addData();
             }else{
-                let h1 = document.createElement('h1');
-                h1.appendChild(document.createTextNode(`Congrats You Got Full Score [ ${fullscore} ] from  [ ${fullscore} ]`));
-                result.appendChild(h1);
+                let h6 = document.createElement('h6');
+                h6.appendChild(document.createTextNode(`Congrats You Got Full Score [ ${fullscore} ] from  [ ${fullscore} ]`));
+                result.appendChild(h6);
                 result.style.display = 'flex';
                 AnotherRound.style.display = 'block';
             }
